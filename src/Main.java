@@ -47,6 +47,8 @@ public class Main {
         button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                pageFrame.setVisible(false);   // close pageFrame when button is clicked on
+
                 // extract inputs from text field
                 String name = name_of_primary_driver.getText();
                 String home_ad = home_address.getText();
